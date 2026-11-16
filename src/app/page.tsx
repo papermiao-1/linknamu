@@ -5,6 +5,7 @@ import ProfileHeader from "@/components/ProfileHeader";
 const profile = {
   name: "김며냐",
   bio: "강해지는 게 목표인 냥냥이",
+  imageUrl: "/cat.webp",
 };
 
 const links = [
@@ -15,9 +16,13 @@ const links = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-5 py-12">
-      <ProfileHeader name={profile.name} bio={profile.bio} />
-      <ul className="mt-10 flex flex-col gap-4">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 py-16 sm:py-24">
+      <ProfileHeader
+        name={profile.name}
+        bio={profile.bio}
+        imageUrl={profile.imageUrl}
+      />
+      <ul className="mt-12 flex flex-col gap-4">
         {links.map((link) => (
           <li key={link.id}>
             <LinkCard title={link.title} url={link.url} />

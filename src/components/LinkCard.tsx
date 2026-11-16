@@ -9,7 +9,7 @@ export default function LinkCard({ title, url }: LinkCardProps) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full rounded-2xl border border-zinc-300 px-5 py-4 text-center font-medium transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
+      className="block w-full rounded-3xl border border-[var(--glass-border)] bg-[var(--glass-bg)] px-6 py-4 text-center text-[15px] font-medium shadow-[var(--glass-shadow)] backdrop-blur-xl transition duration-200 hover:-translate-y-0.5 hover:bg-[var(--glass-bg-hover)] active:translate-y-0"
     >
       {title}
     </a>
