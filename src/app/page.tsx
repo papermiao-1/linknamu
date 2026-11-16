@@ -3,8 +3,8 @@ import ProfileHeader from "@/components/ProfileHeader";
 
 // 더미 데이터: 실제 내용은 나중에 교체
 const profile = {
-  name: "김명재",
-  bio: "강해지는 게 목표인 기획자",
+  name: "김며냐",
+  bio: "강해지는 게 목표인 냥냥이",
 };
 
 const links = [
